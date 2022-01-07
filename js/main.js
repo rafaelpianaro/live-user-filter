@@ -31,6 +31,7 @@ async function getData() {
 }
 
 function filterData(searchTerm) {
+    // console.log('searchTerm', searchTerm)
     listItems.forEach(item => {
         if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())){
             item.classList.remove('hide')
